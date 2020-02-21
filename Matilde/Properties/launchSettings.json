@@ -1,0 +1,21 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": true,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:63070/",
+      "sslPort": 44390
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "CLIENT_SECRET": "j9AtHmdkW0Gl1xT5voIHyA==",
+        "CLIENT_ID": "ac1dcf5329564bfe815423ccc5905f5d",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

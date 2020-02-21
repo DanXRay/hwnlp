@@ -1,0 +1,35 @@
+﻿
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/neon.css" asp-append-version="true" />
+
+    <title>Classy</title>
+</head>
+<body>
+    <p><a class="matilda scanlines" asp-controller="Home" asp-action="Index">&nbsp;&nbsp;----~<span style="color:orange;">@@</span>&nbsp;&nbsp;</a></p>
+    <br />
+    <div id="container">
+        <h1><a class="classy" asp-controller="Classy" asp-action="Index">Classy the Classifier</a></h1>
+        <p id="holidayMessage">&nbsp;</p>
+        <br />
+        <button id="resultStatus" class="btn-lg scanlines" onclick="buttonPressed();">
+            &nbsp;&nbsp;analyze&nbsp;&nbsp;</button><br />
+            <p >&nbsp;</p>
+            <br />
+            <form id="funForm">
+                <input id="formTitle" type="text" class="form-control form-rounded" placeholder="  Document Title Goes Here  <|º감º|>">
+                <div id="resultTitle">&nbsp;</div>
+                <br />
+                <textarea id="formBody" class="form-control form-rounded" rows="3" placeholder="  All the Contents of the Document Go Here  <|º감º|>"></textarea>
+                <div id="resultBody">&nbsp;</div>
+            </form>
+
+
+</div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/classy.js" asp-append-version="true"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=League+Script" />
+</body>
