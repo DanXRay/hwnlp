@@ -128,10 +128,19 @@ namespace hwnlp2.Models
             return $"Basic {token}";
         }
 
-        private static void LogThis(string youser, dynamic resulto, string response)
+        private static async System.Threading.Tasks.Task LogThisAsync(string youser, dynamic resulto, string response)
         {
-            //to the provider
+            //combine response and resulto
 
+            HttpContent body = new StringContent(response);
+
+            //to the provider
+            //https://theprovider.azurewebsites.net/api/provider?////code=weeRN9CPlMu0Pdgoj4fgbLlASUMrkqxlOWWxWmfm39bDInEmccNFIg==&cli=@poke log
+            string theUrl = Environment.GetEnvironmentVariable("THEPROVIDER"); ;
+            //string url = "https://theprovider.azurewebsites.net/api/provider?////code=weeRN9CPlMu0Pdgoj4fgbLlASUMrkqxlOWWxWmfm39bDInEmccNFIg==";
+            //POST
+            var result = await httpClient.PostAsync($"{theUrl}&cli=@peek log", body);
+            var b = result;
         }
 
         public static string SayWhat(string inquery, string youser)
@@ -181,7 +190,7 @@ namespace hwnlp2.Models
             what = what.TrimStart();
             what = what.Trim();
             //Log
-            LogThis(youser, cognition, what);
+            LogThisAsync(youser, cognition, what);
             return what;
         }
 
