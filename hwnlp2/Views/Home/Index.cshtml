@@ -1,0 +1,97 @@
+﻿
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - hwnlp</title>
+
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+<body class="noisy">
+
+    <div class="container body-content">
+        <div class="row">
+            <div id="nav1" class="pull-right">
+                @*<a asp-area="" asp-controller="Home" asp-action="Index">&nbsp;[@User.Identity.Name]&nbsp;----~<span style="color:orange;">@@</span>&nbsp;&nbsp;</a>*@
+                <span class="blarg" id="userId">[@User.Identity.Name]</span>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div>
+
+                <div id="resultAccumulator">
+                </div>
+                <span id="inquery"></span><span class="cursor">&nbsp;</span>
+                <p id="resultO"></p>
+
+
+            </div>
+
+        </div>
+        <div id="startUpStuff" class="row ">
+            <h1>@ViewData["Title"]&nbsp;</h1>
+            <h2>@ViewData["Message1"]&nbsp; </h2>
+            <h2>@ViewData["Message2"]&nbsp; </h2>
+            <h2>@ViewData["Message3"]&nbsp; </h2>
+        </div>
+            <div class="row">
+                <div class="cubeContainer col-md-5">
+                    <div id="cube">
+                        <div class="front">🖖</div>
+                        <div class="back">👩‍🚀</div>
+                        <div class="right">🤔</div>
+                        <div class="left">😀</div>
+                        <div class="top">🤒</div>
+                        <div class="bottom">👩‍⚕️</div>
+                    </div>
+                </div>
+                @*<div class="col-md-5 text-center ">Powered by <h1><a href="https://healthwise.atlassian.net/wiki/spaces/~317073829/pages/857514048/HW+Cognitive+Services?atlOrigin=eyJpIjoiNzY5MzZjZTEwMmVlNDI0MGEzMjQ4ZGM4N2IyYjQ4MjAiLCJwIjoiYyJ9">Healthwise Cognitive Services</a></h1></div>*@
+            </div>
+            @*<p>&nbsp;</p>*@
+            @*<p>A little bit steampunk but she plays it straight.</p>
+        <p>She may not be perfect but she's 100% artificial!</p>*@
+
+        </div>
+
+
+
+        @*<footer>
+
+                <p>&nbsp;</p>
+                if you like Matilda you may also like&nbsp;
+                <a asp-area="" asp-controller="Classy" asp-action="Index">Classy the Classifier</a>
+            </footer>*@
+    </div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+
+
+
+</body>
+
+<div class="emblem"><span class="icon-information"></span></div>
+<div class="frame">
+
+    <div class="piece scanlines noclick"></div>
+    <div class="piece glow noclick"></div>
+</div>
